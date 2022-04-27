@@ -15,7 +15,7 @@ app.use(express.json())
 app.use('/user', authRoutes)
 
 app.get('/', (req,res) => {
-    res.send(`Server deployed on PORT; ${PORT}`)
+    res.send(`Server deployed by CI/CD pipeline on ${Date.now().toLocaleString()} on PORT; ${PORT}`)
 })
 
 app.listen(PORT, () => {

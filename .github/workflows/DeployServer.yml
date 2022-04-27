@@ -21,8 +21,8 @@ jobs:
       - name: add github username
         run: git config --global user.name "Sakshi23-08"
       - name: add github email
-        run: git config --global user.email "gupta.kartik18kg@gmail.com"
+        run: git config --global user.email "sakshigmasurkar@gmail.com"
       - name: add heroku remote
         run: git remote add heroku https://heroku:3fb8c44c-3d68-42be-b452-e04d146832f7@git.heroku.com/aqueous-fjord-75836.git
-      - name: push to herku
+      - name: push to heroku
         run: git push heroku master --force
